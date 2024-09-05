@@ -1,0 +1,103 @@
+{
+    "kind": "books#volume",
+    "id": "4VBXEAAAQBAJ",
+    "etag": "3M+M9Rr+iEs",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/4VBXEAAAQBAJ",
+    "volumeInfo": {
+        "title": "Korkusuzca Yaşayabilmek",
+        "authors": [
+            "Guy Finley"
+        ],
+        "publisher": "Destek Yayınları",
+        "publishedDate": "2022-01-03",
+        "description": "<p>Uluslararası çok satanlar listesinde haftalarca bir numarada yer alan ve Türkiye’de yüz binlerce okura ulaşmayı başaran Vazgeçebİlmek, Sevebİlmek ve Özgürleşebİlmek kitaplarının dünyaca ünlü yazarı Guy Finley, bu kez korkuya meydan okuyan bir yaşam disipliniyle çıkıyor okurunun karşısına:</p><p>Korkusuzca Yaşamak!</p><p>Korkunun tarifini çok katmanlı bir bakış açısıyla yeniden zihin süzgecinden geçiren Guy Finley, korkuyla düşünce arasındaki bağların nasıl baştan kurgulanması gerektiğine örnek hikâyelerle ve önerdiği etkili uygulamalarla birlikte dikkat çekiyor.</p><p>Daha düne kadar uykularını kaçıran şeyin ne olduğunu hatırla mesela. Önceleri çok istediğin, önemsediğin, kafana taktığın, üzerinde çok düşünüp kaygılandığın, belki çok istediğin, uğruna çok şeyi gözden çıkardığın, vakit harcadığın şeyleri düşün.</p><p>Çok değil kısa zaman önce, her biri yaşam kaliteni etkileyecek kadar önemliyken, sende korku ve kaygı hislerine neden olurken, bugün hiçbir şey değişmediği halde güçlerini nasıl kaybettiler peki? Neden eskisi kadar korkutup kaygılandırmıyorlar seni?</p><p>Yoksa korku sende sadece bir yaşamda kalma refleksi değil mi? Aynı zamanda bir düşünce hatası mı?</p><p>Korkuyla ilgili düşünce hatalarının sonlanması, elbette birtakım zihinsel disiplinlerin yeniden yapılanmasıyla ilgili...</p><p>Guy Finley, tam da bu disiplinlerden söz ediyor işte.</p><p>Korkusuzca Yaşamak, bir düşünce sanatı kitabıdır aslında. Zorluğun içindeki basit ama etkili kolaylık gibi...</p><p>Korktuğun şeye yüklediğin anlamları gözden geçir önce, sonrasında bu kitabın sayfaları arasında korkularından özgürleşmeye başlayacaksın zaten</p>",
+        "industryIdentifiers": [
+            {
+                "type": "ISBN_10",
+                "identifier": "6254410125"
+            },
+            {
+                "type": "ISBN_13",
+                "identifier": "9786254410123"
+            }
+        ],
+        "readingModes": {
+            "text": false,
+            "image": true
+        },
+        "pageCount": 208,
+        "printedPageCount": 16,
+        "dimensions": {
+            "height": "21.10 cm",
+            "width": "13.60 cm",
+            "thickness": "2.00 cm"
+        },
+        "printType": "BOOK",
+        "categories": [
+            "Antiques & Collectibles / Books"
+        ],
+        "maturityRating": "MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE72aYx6gpc3i55sx_1ANddPc9ASzvBD6vVDc0LTUREfO-y4EE-H8fSPITL-I8SVA9sp9A1QJs7xAsF0HcQxX0wcP_Y-8IOatd6SYh_-Wpf-WXAcL11xqKzfMp9x0CWTaBOAMrzVV&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70eroDdbUKNZmoK_wqMGSX0TaEdNGziEdMwxUFJYcxEfGxGAHO7BGYOeytP1CS3DWlkymlJ7B0LfAAVeVMxyJIaZWJTQVr8bT0z0WhkjuODUH5YKtiLSQkd1tNTzZOZ5na1d6LA&source=gbs_api",
+            "small": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE70pjlkYObFnNOL2pI4PfrkxPqKEg4NqamRNMlGrKrroqKSf_FDkD-rHjuIhAY4DMLVWtM8YdTRT-yNiCpHxT8EDU7MmMHu66wVJ7GBzuDgas0sjsZlUZJq1lKgrV72Pnyzz4C4S&source=gbs_api",
+            "medium": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE72YqQY6U7uAlv8SVixAeWd0X-rdxb79yBBMvcTESx7mrrptbpVA0_cg9dslwq-7fnQqSodTYmoyVvNDLAieyVkS5eTuJtCyRJrnOKdE_M6Bhyi1xo3_3LBrMPLyGUwtK7sGDHd1&source=gbs_api",
+            "large": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71mJEGOaguV79CxrH1n9YitOt7BCDWbo7juWzqZ2dsgPT7U5PwKLOC1a57bclybgXmxsfWunNWAfBwRUK7obcWTzEX9Vp8_JTDSETJNGyfXmahQPaFQfoPquDAW71hvRtJ7P0cH&source=gbs_api",
+            "extraLarge": "http://books.google.com/books/publisher/content?id=4VBXEAAAQBAJ&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE73ORzVkRs-U77SldyM6_x2oenTGoQpevtv4VHxh0b1f9jieNRP6vVfZGBeQWefdSRfkjoZHHOzUeOj620B3hj-Q6ICPzRl-q8rTNqPxZYUniLCDHdiRaXD52IJUjkQZDyWWv9-F&source=gbs_api"
+        },
+        "language": "tr",
+        "previewLink": "http://books.google.com.tr/books?id=4VBXEAAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=4VBXEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=4VBXEAAAQBAJ"
+    },
+    "saleInfo": {
+        "country": "TR",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+            "amount": 9.6,
+            "currencyCode": "TRY"
+        },
+        "retailPrice": {
+            "amount": 9.6,
+            "currencyCode": "TRY"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=4VBXEAAAQBAJ&rdid=book-4VBXEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+            {
+                "finskyOfferType": 1,
+                "listPrice": {
+                    "amountInMicros": 9600000,
+                    "currencyCode": "TRY"
+                },
+                "retailPrice": {
+                    "amountInMicros": 9600000,
+                    "currencyCode": "TRY"
+                }
+            }
+        ]
+    },
+    "accessInfo": {
+        "country": "TR",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": true,
+            "acsTokenLink": "http://books.google.com.tr/books/download/Korkusuzca_Ya%C5%9Fayabilmek-sample-pdf.acsm?id=4VBXEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4VBXEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+    }
+}
