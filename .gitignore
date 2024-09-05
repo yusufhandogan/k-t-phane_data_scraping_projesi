@@ -77,8 +77,8 @@ target/
 
 
 #project 
-scrapy.cfg
-
+*.cfg
+koha/
 
 
 
