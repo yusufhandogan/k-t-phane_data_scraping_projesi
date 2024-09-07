@@ -20,6 +20,7 @@ class NadirKitap(scrapy.Spider):
         self.bulunamayan_isbnler = []
 
     def start_requests(self):
+        #************************* Buradaki PATH Değişecek ******************************#
         path = r"C:\Users\yusuf\OneDrive\Masaüstü\Kütüphane Kayıt\nadir\nadir.json".replace(
             "\\", "/"
         )
@@ -119,10 +120,10 @@ class NadirKitap(scrapy.Spider):
 class KohaSpider(scrapy.Spider):
     name = "koha"
     
-    custom_settings = {'ITEM_PIPELINES': {'nadir.pipelines.KohaJsonWriterPipeline': 300}}
-    print("KOHAAAAAA\n\n\n\n")
+    custom_settings = {'ITEM_PIPELINES': {'nadir.pipelines.KohaJsonWriterPipeline': 300}} # Burada çalışacak pipeline ı belirtip, yandaki 300 sayısı ile önceliğini belirleyebilirsiniz.
+    print("Koha Spider Çalışıyor\n\n\n\n")
     path = (
-        r"C:\Users\yusuf\OneDrive\Masaüstü\Kütüphane Kayıt\koha\koha\koha.json".replace(
+        r"C:\Users\yusuf\OneDrive\Masaüstü\nadir\nadir\koha.json".replace(
             "\\", "/"
         )
     )

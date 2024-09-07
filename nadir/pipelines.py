@@ -34,7 +34,7 @@ class JsonWriterPipeline:
         # Item'ı JSON formatında bir listeye ekleyin
         self.items.append(dict(item))
         return item
-
+# Koha İçin Yazmış Olduğunuz pipeline artık burada
 class KohaJsonWriterPipeline:
     def __init__(self):
         self.items = []

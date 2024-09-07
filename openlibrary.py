@@ -1,16 +1,27 @@
 import json
 import requests
 import subprocess
+import os
 
 bulunamayan_isbnler = []
+
+
 def openLibraryKayit(koli):
-    
-    with open("open_Library_gönderilen.json","r",encoding="utf-8") as file:
+
+    with open("open_Library_gönderilen.json", "r", encoding="utf-8") as file:
         isbnList = json.load(file)
     for isbn in isbnList:
         hata = 0
         url = f"https://openlibrary.org/isbn/{isbn}.json"
-        headers = ["ISBN", "Koli No", "Book Name", "Book Author", "Book Publisher", "Book Publish Date", "Book Page"]
+        headers = [
+            "ISBN",
+            "Koli No",
+            "Book Name",
+            "Book Author",
+            "Book Publisher",
+            "Book Publish Date",
+            "Book Page",
+        ]
 
         try:
             with open("library.json", "r", encoding="utf-8") as file:
@@ -23,7 +34,7 @@ def openLibraryKayit(koli):
         try:
             result = requests.get(url)
             veri_data = result.json()
-        except requests.exceptions.JSONDecodeError:
+        except json.JSONDecodeError: # burada da bir hata oluştu. Bu kısmı response kütüphanesi kullanarak yapmışsınız fakat json kütüphanesi kullanılması gerek
             hata = 1
 
         if hata == 0:
@@ -33,19 +44,25 @@ def openLibraryKayit(koli):
                 book_name = "Kitap İsmi Bulunamadı"
                 hata += 1
             try:
-                book_publisher = veri_data.get("publishers", ["Kitap Yayınevi Bilgisi Bulunamadı"])[0]
+                book_publisher = veri_data.get(
+                    "publishers", ["Kitap Yayınevi Bilgisi Bulunamadı"]
+                )[0]
             except KeyError:
                 book_publisher = "Kitap Yayınevi Bilgisi Bulunamadı"
                 hata += 1
 
-            try:    
-                book_page = veri_data.get("number_of_pages", "Kitap Sayfası Bilgisi Bulunamadı")
+            try:
+                book_page = veri_data.get(
+                    "number_of_pages", "Kitap Sayfası Bilgisi Bulunamadı"
+                )
             except KeyError:
                 book_page = "Kitap Sayfası Bilgisi Bulunamadı"
                 hata += 1
 
             try:
-                book_publish_date = veri_data.get("publish_date", "Kitap Yayın Tarihi Bilgisi Bulunamadı")
+                book_publish_date = veri_data.get(
+                    "publish_date", "Kitap Yayın Tarihi Bilgisi Bulunamadı"
+                )
             except KeyError:
                 book_publish_date = "Kitap Yayın Tarihi Bilgisi Bulunamadı"
                 hata += 1
@@ -72,7 +89,20 @@ def openLibraryKayit(koli):
                 book_page = book_page[0]
 
             if hata < 3:
-                book_info = dict(zip(headers, [isbn, koli, book_name, book_author, book_publisher, book_publish_date, book_page]))
+                book_info = dict(
+                    zip(
+                        headers,
+                        [
+                            isbn,
+                            koli,
+                            book_name,
+                            book_author,
+                            book_publisher,
+                            book_publish_date,
+                            book_page,
+                        ],
+                    )
+                )
                 veri["books"].append(book_info)
 
                 with open("library.json", "w", encoding="utf-8") as file:
@@ -84,16 +114,19 @@ def openLibraryKayit(koli):
         else:
             bulunamayan_isbnler.append(isbn)
 
-        
-
     if len(bulunamayan_isbnler) > 0:
         with open("nadir/nadir.json", "w", encoding="utf-8") as file:
             json.dump(bulunamayan_isbnler, file, indent=4, ensure_ascii=False)
 
         run_scrapy()
 
+
 def run_scrapy():
-    subprocess.run("cd nadir && scrapy crawl nadir", shell=True)
+    try:
+        result = subprocess.run(["scrapy", "crawl", "nadir"], check=True, capture_output=True, text=True)
+        print(result.stdout)
+    except subprocess.CalledProcessError as e:
+        print(f"Scrapy çalışırken hata oluştu: {e.stderr}")
 
 if __name__ == "__main__":
     # Örnek bir çağrı
